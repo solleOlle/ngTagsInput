@@ -1,7 +1,6 @@
 {
   "author": {
-    "name": "Michael Benford",
-    "email": "michael@michaelbenford.net"
+    "name": "solleOlle"
   },
   "name": "ng-tags-input",
   "prettyName": "ngTagsInput",
@@ -11,10 +10,10 @@
   "homepage": "http://mbenford.github.io/ngTagsInput",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbenford/ngTagsInput.git"
+    "url": "https://github.com/solleOlle/ngTagsInput.git"
   },
   "bugs": {
-    "url": "https://github.com/mbenford/ngTagsInput/issues"
+    "url": "https://github.com/solleOlle/ngTagsInput/issues"
   },
   "keywords": [
     "angular",
