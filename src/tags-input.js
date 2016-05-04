@@ -99,7 +99,9 @@ tagsInput.directive('tagsInput', function($timeout, $document, $window, $q, tags
                 })
                 .catch(function() {
                     if (tagText) {
-                      events.trigger('invalid-tag', { $tag: tag });
+                        events.trigger('invalid-tag', { $tag: tag });
+                    } else {
+                        events.trigger('empty-tag', { $tag: tag });
                     }
                 });
         };
@@ -164,7 +166,8 @@ tagsInput.directive('tagsInput', function($timeout, $document, $window, $q, tags
             onInvalidTag: '&',
             onTagRemoving: '&',
             onTagRemoved: '&',
-            onTagClicked: '&'
+            onTagClicked: '&',
+            onTagEmpty: '&'
         },
         replace: false,
         transclude: true,
@@ -353,6 +356,7 @@ tagsInput.directive('tagsInput', function($timeout, $document, $window, $q, tags
             events
                 .on('tag-added', scope.onTagAdded)
                 .on('invalid-tag', scope.onInvalidTag)
+                .on('empty-tag', scope.onTagEmpty)
                 .on('tag-removed', scope.onTagRemoved)
                 .on('tag-clicked', scope.onTagClicked)
                 .on('tag-added', function() {
