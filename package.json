@@ -2,8 +2,8 @@
   "author": {
     "name": "solleOlle"
   },
-  "name": "ng-tags-input",
-  "prettyName": "ngTagsInput",
+  "name": "ng-tags-input-olle",
+  "prettyName": "ngTagsInputOlle",
   "version": "3.0.0",
   "description": "Tags input directive for AngularJS",
   "license": "MIT",
